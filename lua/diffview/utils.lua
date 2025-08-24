@@ -1122,6 +1122,8 @@ function M.sanitize_float_config(config, strict)
     style = true,
     border = true,
     noautocmd = true,
+    title = true,
+    title_pos = true
   }
   local result = {}
 

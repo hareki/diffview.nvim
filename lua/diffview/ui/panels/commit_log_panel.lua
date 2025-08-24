@@ -38,8 +38,8 @@ CommitLogPanel.default_config_float = function()
   local viewport_height = vim.o.lines
   c.width = math.min(100, viewport_width)
   c.height = math.min(24, viewport_height)
-  c.col = math.floor(viewport_width * 0.5 - c.width * 0.5)
-  c.row = math.floor(viewport_height * 0.5 - c.height * 0.5)
+  c.col = math.floor(viewport_width * 0.5 - c.width * 0.5) - 1
+  c.row = math.floor(viewport_height * 0.5 - c.height * 0.5) - 1
 
   return c
 end
